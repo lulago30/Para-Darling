@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="juego">
+        <h1>Juego Interactivo</h1>
+        <div id="preguntas">
+            <!-- Preguntas se generarán aquí -->
+        </div>
+        <button onclick="verificarRespuestas()">Verificar Respuestas</button>
+        <p id="resultado"></p>
+    </div>
+    <div id="modalCarta" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarCarta()">×</span>
+            <p id="contenidoCarta"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
